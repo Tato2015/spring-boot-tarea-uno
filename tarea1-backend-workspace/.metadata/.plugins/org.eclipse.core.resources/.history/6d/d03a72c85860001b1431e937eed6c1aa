@@ -1,0 +1,46 @@
+package com.tarea.servicio;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tarea.modelo.Persona;
+import com.tarea.repositorio.IPersonaRepo;
+
+@Service
+public class PersonaServiceImpl implements IPersonaService{
+
+	@Autowired
+	private IPersonaRepo repo;
+	
+	@Override
+	public Persona registrar(Persona persona) throws Exception {
+		return repo.save(persona);
+	}
+
+	@Override
+	public Persona modificar(Persona persona) throws Exception {
+		return repo.save(persona);
+	}
+
+	@Override
+	public List<Persona> listar() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Persona listarPorId(Integer id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void eliminar(Integer id) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

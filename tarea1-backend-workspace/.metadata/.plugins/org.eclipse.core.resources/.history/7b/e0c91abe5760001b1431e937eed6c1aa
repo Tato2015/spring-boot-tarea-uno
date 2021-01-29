@@ -1,0 +1,5 @@
+package com.tarea.repositorio;
+
+public interface IPersonaRepo {
+
+}
